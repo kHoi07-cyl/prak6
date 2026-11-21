@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum mandiri</title>
+</head>
+<body>
+    <h1>ini js mandiri</h1>
+    <script>
+        // Program Pengolah Nilai Mahasiswa
+
+        // Deklarasi variabel
+        const nama = "Khoirunnisa";
+        const tugas = 80;
+        const uts = 70;
+        const uas = 90;
+
+        // Menghitung nilai akhir
+        const nilaiAkhir = (tugas * 30 / 100) +
+                   (uts * 30 / 100) +
+                   (uas * 40 / 100);
+
+        // Menentukan status kelulusan
+        let status;
+
+        if (nilaiAkhir >= 60) {
+            status = "LULUS";
+        } else {
+            status = "TIDAK LULUS";
+        }
+
+        // Menampilkan hasil melalui console.log()
+        console.log("Nama Mahasiswa:", nama);
+        console.log("Nilai Akhir:", nilaiAkhir);
+        console.log("Status Kelulusan:", status);
+    </script>
+</body>
+</html>
